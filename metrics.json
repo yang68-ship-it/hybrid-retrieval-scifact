@@ -1,0 +1,26 @@
+{
+  "dataset": "BEIR SciFact",
+  "documents": 5183,
+  "queries": 300,
+  "candidate_top_k_per_retriever": 10,
+  "output_top_k": 10,
+  "rrf_k": 60,
+  "metrics": {
+    "BM25": {
+      "Recall@10": 0.7851111111111111,
+      "MRR@10": 0.6225277777777778
+    },
+    "Embedding": {
+      "Recall@10": 0.8452222222222222,
+      "MRR@10": 0.6844708994708995
+    },
+    "Hybrid + RRF": {
+      "Recall@10": 0.8605555555555554,
+      "MRR@10": 0.6875436507936509
+    },
+    "Hybrid + Cross-Encoder": {
+      "Recall@10": 0.8782222222222223,
+      "MRR@10": 0.699026455026455
+    }
+  }
+}
